@@ -1,0 +1,40 @@
+<suite name="Suite">
+<test name="Annotations">
+<classes>
+<class name="TestNGPackage.Annotations">
+
+</class>
+</classes>
+</test>
+
+<test name="test2">
+<classes>
+<class name="TestNGPackage.TestNGGroups">
+<methods>
+<exclude name="test1"/>
+<include name="test1"/>
+</methods>
+</class>
+
+</classes>
+
+
+</test>
+
+<test name="test3">
+<groups>
+<run>
+<include name="smoke"/>
+<exclude name="sanity"/>
+</run>
+
+</groups>
+<classes>
+<class name="TestNGPackage.TestNGPriority">
+
+
+</class>
+</classes>
+</test>
+</suite>
+
