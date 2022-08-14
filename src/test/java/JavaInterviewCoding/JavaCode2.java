@@ -12,14 +12,14 @@ public class JavaCode2 {
 		
 	int a=0;
 	int b=1;
-	int c;
+	int d;
 	
 	for(int i=0;i<10;i++)
 		{
-		c=a+b;
-		System.out.println(c);
+		d=a+b;
+		System.out.println(d);
 		a=b;
-	    b=c;
+	    b=d;
 	
 	
 	}
