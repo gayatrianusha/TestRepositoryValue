@@ -22,8 +22,8 @@ public class DragAndDrop {
 		WebElement dest=driver.findElement(By.id("column-b"));
 		Actions action= new Actions(driver);
 		Thread.sleep(300);
-		//action.clickAndHold(source).moveToElement(dest).release().build().perform();
-		action.dragAndDrop(source, dest);
+		action.clickAndHold(source).moveToElement(dest).release(dest).build().perform();
+		//action.dragAndDrop(source, dest);
 	}
 	
 }

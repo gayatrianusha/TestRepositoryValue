@@ -16,12 +16,13 @@ public class Scroll {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver= new ChromeDriver();
 		driver.get("http://the-internet.herokuapp.com/infinite_scroll");
-		JavascriptExecutor js= (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 		
-		//Scroll  till element
-		//WebElement element=
-		//js.executeScript("arguments[0].scrollIntoView();",element);
+		//js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+		
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,150)", " ");
+		
+		
 	}
 
 }
